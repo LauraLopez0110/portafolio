@@ -1,0 +1,7 @@
+.avatar-icon {
+  width: 64px;   /* ancho fijo */
+  height: 64px;  /* alto fijo */
+  object-fit: cover;  /* recorta sin deformar */
+  border-radius: 50%; /* si quieres que sea circular */
+  border: 2px solid #ddd; /* opcional: un borde suave */
+}

@@ -1,0 +1,23 @@
+{
+  "laura": {
+    "nombre": "Laura Yulieth López Albino",
+    "foto": "/static/img/laura.jpg",
+    "icon": "img/icons/laura_icon.png",
+    "iniciales": "Laura López",
+    "presentacion": "Desarrolladora backend enfocada en APIs.",
+    "habilidades": [
+      { "nombre": "Python", "estrellas": 3, "porcentaje": 85 },
+      { "nombre": "Flask",  "estrellas": 4, "porcentaje": 80 }
+    ],
+    "proyectos": [
+      { "nombre": "API Cursos", "descripcion": "REST para gestión de cursos.", "link": "https://example.com" }
+    ],
+    "contacto": {
+      "email": "laura@example.com",
+      "linkedin": "https://www.linkedin.com/in/laura",
+      "telefono": "+57 300 000 0000"
+    }
+  },
+  "vanesa": {},
+  "paula": {}
+}

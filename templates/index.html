@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio · Portafolio{% endblock %}
+
+{% block content %}
+<h1>Portafolio del equipo</h1>
+
+<div class="cards">
+  {% for slug, i in integrantes.items() %}
+    <a href="/perfil/{{ slug }}" class="card">
+      {% if i.icon %}
+        <img src="{{ url_for('static', filename=i.icon) }}" alt="Ícono de {{ i.nombre }}" class="avatar-icon">
+      {% elif i.iniciales %}
+        <div class="avatar-icon avatar-iniciales" aria-label="Ícono de {{ i.nombre }}">
+          {{ i.iniciales }}
+        </div>
+      {% else %}
+        <img src="{{ i.foto }}" alt="Foto de {{ i.nombre }}" class="avatar-icon">
+      {% endif %}
+      <p>{{ i.iniciales }}</p>
+    </a>
+  {% endfor %}
+</div>
+{% endblock %}

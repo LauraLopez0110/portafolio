@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Portafolio del equipo{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  {% block navbar %}
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="#equipo">Equipo</a>
+  </nav>
+  {% endblock %}
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  {% block footer %}
+  <footer>
+    <p>Portafolio grupal · Flask + JSON</p>
+  </footer>
+  {% endblock %}
+
+</body>
+</html>
