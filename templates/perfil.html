@@ -1,37 +1,83 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %}{{ perfil.nombre }} · Perfil{%
+endblock %} {% block content %}
+<div class="container my-5">
+  <!-- Card del perfil -->
+  <div class="card text-center shadow-lg mb-4">
+    <div class="card-body">
+      <img
+        src="{{ perfil.foto }}"
+        alt="{{ perfil.nombre }}"
+        class="rounded-circle mb-3"
+        width="250"
+        height="250"
+      />
+      <h2 class="card-title">{{ perfil.nombre }}</h2>
+      <p class="card-text">{{ perfil.presentacion }}</p>
+    </div>
+  </div>
 
-{% block title %}{{ perfil.nombre }} · Perfil{% endblock %}
-
-{% block content %}
-<div class="profile">
-  <img src="{{ perfil.foto }}" alt="{{ perfil.nombre }}" class="avatar-big">
-  <h1>{{ perfil.nombre }}</h1>
-  <p>{{ perfil.presentacion }}</p>
+<!-- Card de habilidades -->
+<div class="card shadow-lg mb-4">
+  <div class="card-body">
+    <h3 class="card-title text-center">Habilidades</h3>
+    {% for h in perfil.habilidades %}
+      {% if not h.descripcion %}
+      <div class="mb-3">
+        <div class="d-flex justify-content-between">
+          <span><strong>{{ h.nombre }}</strong></span>
+          <span>{{ h.porcentaje }}%</span>
+        </div>
+        <div class="progress" style="height: 8px;">
+          <div class="progress-bar bg-primary" role="progressbar"
+               style="width: {{ h.porcentaje }}%;" 
+               aria-valuenow="{{ h.porcentaje }}" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <span class="badge bg-secondary m-1">{{ h.descripcion }}</span>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 
-<section>
-  <h2>Habilidades</h2>
-  <ul>
-    {% for h in perfil.habilidades %}
-      <li>
-        {{ h.nombre }}:
-        {% for n in range(h.estrellas) %}★{% endfor %}
-        {% for n in range(5 - h.estrellas) %}☆{% endfor %}
-        ({{ h.porcentaje }}%)
-      </li>
-    {% endfor %}
-  </ul>
-</section>
 
-<section>
-  <h2>Proyectos</h2>
-  <ul>
-    {% for p in perfil.proyectos %}
-      <li>
-        {% if p.link %}<a href="{{ p.link }}" target="_blank">{{ p.nombre }}</a>{% else %}{{ p.nombre }}{% endif %}
-        {% if p.descripcion %} — {{ p.descripcion }}{% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+  <!-- Card de proyectos -->
+  <div class="card shadow-lg mb-4">
+    <div class="card-body">
+      <h3 class="card-title text-center">Proyectos</h3>
+      <ul class="list-group list-group-flush">
+        {% for p in perfil.proyectos %}
+        <li class="list-group-item text-center">
+          {% if p.link %}
+          <a href="{{ p.link }}" target="_blank">{{ p.nombre }}</a>
+          {% else %} {{ p.nombre }} {% endif %} {% if p.descripcion %}
+          <br /><small>{{ p.descripcion }}</small>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Card de Contacto -->
+  <div class="card shadow-lg">
+    <div class="card-body">
+      <h3 class="card-title text-center">Contacto</h3>
+      <ul class="list-group list-group-flush text-center">
+        {% for c in perfil.contacto %}
+        <li class="list-group-item">
+          {% if c.link %}
+          <a href="{{ c.link }}" target="_blank">{{ c.nombre }}</a>
+          {% else %}
+          <strong>{{ c.nombre }}:</strong>
+          {% endif %} {% if c.descripcion %}
+          <br /><small>{{ c.descripcion }}</small>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
 {% endblock %}

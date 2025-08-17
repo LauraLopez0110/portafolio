@@ -7,6 +7,11 @@ app = Flask(__name__)
 with open("data/integrantes.json", encoding="utf-8") as f:
     integrantes = json.load(f)
 
+# Inyectar en todas las plantillas
+@app.context_processor
+def inject_integrantes():
+    return dict(integrantes=integrantes)
+
 @app.route("/")
 def index():
     # Pasamos todos los integrantes al index

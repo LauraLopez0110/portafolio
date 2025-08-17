@@ -3,20 +3,42 @@
     "nombre": "Laura Yulieth López Albino",
     "foto": "/static/img/laura.jpg",
     "icon": "img/icons/laura_icon.png",
-    "iniciales": "Laura López",
-    "presentacion": "Desarrolladora backend enfocada en APIs.",
+    "iniciales": "LYLA",
+    "presentacion": "Estudiante de últimos semestres de Ingeniería de Sistemas en la Universidad Santo Tomás. Con formación en desarrollo web, seguridad informática y bases de datos. Experiencia en proyectos académicos aplicando tecnologías modernas y buenas prácticas de desarrollo seguro. Participante en semilleros de investigación en ciberseguridad, con un proyecto sobre phishing impulsado por IA. Interesada en consolidar un perfil full stack con enfoque en seguridad.",
+    
     "habilidades": [
-      { "nombre": "Python", "estrellas": 3, "porcentaje": 85 },
-      { "nombre": "Flask",  "estrellas": 4, "porcentaje": 80 }
+    { "nombre": "Python", "estrellas": 4, "porcentaje": 70 },
+    { "nombre": "Flask", "estrellas": 4, "porcentaje": 70 },
+    { "nombre": "JavaScript", "estrellas": 2, "porcentaje": 40 },
+    { "nombre": "HTML & CSS", "estrellas": 4, "porcentaje": 85 },
+    { "nombre": "MySQL/PostgreSQL", "estrellas": 3.5, "porcentaje": 70 },
+    { "nombre": "Git & GitHub", "estrellas": 3.5, "porcentaje": 70 },
+    { "nombre": "Otras tecnologías", "descripcion": "Docker, Azure, Postman, OWASP Top 10, Bootstrap" }
     ],
     "proyectos": [
-      { "nombre": "API Cursos", "descripcion": "REST para gestión de cursos.", "link": "https://example.com" }
+      { 
+        "nombre": "Plataforma web educativa", 
+        "descripcion": "Desarrollo con Python, Flask, HTML, CSS, JavaScript, Bootstrap y bases de datos (MySQL/PostgreSQL). Incluye seguridad con reCAPTCHA y autenticación.", 
+        "link": ""
+      },
+      { 
+        "nombre": "Semillero de ciberseguridad", 
+        "descripcion": "Presentación de póster sobre impacto de la IA en el phishing y estrategias de mitigación.", 
+        "link": ""
+      },
+      { 
+        "nombre": "Contenedores Docker y despliegue en Azure", 
+        "descripcion": "Uso de Docker en entornos de desarrollo y despliegue básico en Microsoft Azure, con entornos reproducibles y seguros.", 
+        "link": ""
+      }
     ],
-    "contacto": {
-      "email": "laura@example.com",
-      "linkedin": "https://www.linkedin.com/in/laura",
-      "telefono": "+57 300 000 0000"
-    }
+
+    "contacto": [
+      { "nombre": "Email", "link": "mailto:lauritayuliethalbino@gmail.com", "descripcion": "lauritayuliethalbino@gmail.com" },
+      { "nombre": "LinkedIn", "link": "https://www.linkedin.com/in/laura-yulieth-lópez-albino-0ba412335/", "descripcion": "Perfil profesional" },
+      { "nombre": "GitHub", "link": "https://github.com/LauraLopez0110", "descripcion": "Repositorios y proyectos" },
+      { "nombre": "Teléfono", "descripcion": "+57 313 866 8356" }
+    ]
   },
   "vanesa": {},
   "paula": {}
