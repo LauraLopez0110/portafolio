@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
 html, body {
   height: 100%;
   margin: 0;
@@ -22,48 +24,43 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
-<<<<<<< Updated upstream
-  min-height: 100vh; /* altura mínima de la ventana */
-=======
   min-height: 100vh;
-  background-color: rgb(242, 234, 234); /* altura mínima de la ventana */
+  background-color: rgb(242, 234, 234); /* color de fondo */
 }
 
-.cards{
+/* Cards */
+.cards {
   display: flex;
-  flex-wrap: wrap; /* permite que las tarjetas se ajusten en varias filas */
-  justify-content: center; /* centra las tarjetas horizontalmente */
+  flex-wrap: wrap; /* permite varias filas */
+  justify-content: center;
   align-items: center;
-  gap: 20px; /* espacio entre las tarjetas */
-  padding: 20px; /* espacio alrededor de las tarjetas */
+  gap: 20px;
+  padding: 20px;
 }
+
 .card {
   display: grid;
-  grid-template-columns: 1fr; /* una columna */
-  place-items: center; /* centra el contenido de la tarjeta */
+  grid-template-columns: 1fr;
+  place-items: center;
   height: 200px;
   width: 200px;
-  background-color: #e3d1de; /* color de fondo */
-  color: #333;               /* color del texto */
+  background-color: #e3d1de;
+  color: #333;
   border: none;
-  transition: all ease-in-out 200ms;              /* opcional, si quieres quitar el borde */
-}
-.card:hover {
-  transform: scale(1.05); /* aumenta ligeramente el tamaño al pasar el mouse */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra al pasar el mouse */
->>>>>>> Stashed changes
+  transition: all ease-in-out 200ms;
 }
 
-main {
-  flex: 1; /* ocupa todo el espacio disponible */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .avatar-icon {
-  width: 80px;   /* ancho fijo */
-  height: 80px;  /* alto fijo */
-  object-fit: cover;  /* recorta sin deformar */
-  border-radius: 50%; /* si quieres que sea circular */
-  border: 2px solid #ddd; /* opcional: un borde suave */
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
 }
 
 footer {
@@ -71,9 +68,91 @@ footer {
   color: #fff;
   padding: 8px;
   text-align: center;
-   margin-top: auto;
+  margin-top: auto;
 }
 
 .navbar .dropdown-menu {
   position: absolute;
+}
+
+.cv-btn {
+  background-color: #cd280b;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px #c332cb;
+}
+
+.cv-btn:hover {
+  background-color: #d20684;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Perfil */
+.perfil-card {
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #f3f6f9, #e1e8f0);
+  padding: 30px 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.15);
+}
+
+.perfil-img-wrapper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #1fbde8;
+  margin: 0 auto 15px;
+}
+
+.perfil-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil-nombre {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #1f3f72;
+}
+
+.perfil-presentacion {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(218, 60, 25, 0.7),
+              0 0 20px rgba(209, 39, 5, 0.5);
+}
+
+.contact-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 20px;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
