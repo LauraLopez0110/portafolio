@@ -22,8 +22,8 @@ main {
 
 
 .avatar-icon {
-  width: 80px;   /* ancho fijo */
-  height: 80px;  /* alto fijo */
+  width: 100px;   /* ancho fijo */
+  height: 100px;  /* alto fijo */
   object-fit: cover;  /* recorta sin deformar */
   border-radius: 50%; /* si quieres que sea circular */
   border: 2px solid #ddd; /* opcional: un borde suave */
@@ -125,27 +125,55 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra un poco más fuerte */
 }
 
-.card-cuadrada {
+.cards-index {
   display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-  height: 200px;
-  width: 200px;
-  background-color: #e3d1de;
-  color: #333;
-  border: none;
-  transition: all ease-in-out 200ms;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.card-cuadrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  background: linear-gradient(145deg, #c794b8, #e1e8f0);
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding: 20px;
 }
 
 .card-cuadrada:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.cards-index {
-  display: flex;
-  flex-wrap: wrap;         /* que baje a otra fila si son muchos */
-  justify-content: center; /* centra horizontal */
-  gap: 30px;
-  padding: 60px;
+.card-cuadrada h5 {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Animación de entrada suave */
+.cards-index .card-cuadrada {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.cards-index .card-cuadrada:nth-child(1) { animation-delay: 0.1s; }
+.cards-index .card-cuadrada:nth-child(2) { animation-delay: 0.2s; }
+.cards-index .card-cuadrada:nth-child(3) { animation-delay: 0.3s; }
+.cards-index .card-cuadrada:nth-child(4) { animation-delay: 0.4s; }
+/* puedes seguir sumando si hay más */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
