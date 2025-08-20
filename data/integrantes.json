@@ -5,6 +5,7 @@
     "icon": "img/icons/laura_icon.png",
     "iniciales": "LYLA",
     "presentacion": "Estudiante de últimos semestres de Ingeniería de Sistemas en la Universidad Santo Tomás. Con formación en desarrollo web, seguridad informática y bases de datos. Experiencia en proyectos académicos aplicando tecnologías modernas y buenas prácticas de desarrollo seguro. Participante en semilleros de investigación en ciberseguridad, con un proyecto sobre phishing impulsado por IA. Interesada en consolidar un perfil full stack con enfoque en seguridad.",
+<<<<<<< Updated upstream
     
     "habilidades": [
     { "nombre": "Python", "estrellas": 4, "porcentaje": 70 },
@@ -30,10 +31,48 @@
         "nombre": "Contenedores Docker y despliegue en Azure", 
         "descripcion": "Uso de Docker en entornos de desarrollo y despliegue básico en Microsoft Azure, con entornos reproducibles y seguros.", 
         "link": ""
+=======
+
+    "cv": {
+      "nombre": "Descargar CV",
+      "link": "/static/docs/CV_LauraLópez.pdf"
+    },
+
+    "habilidades": [
+      { "nombre": "Python", "porcentaje": 70 },
+      { "nombre": "Flask", "porcentaje": 70 },
+      { "nombre": "HTML & CSS", "porcentaje": 85 },
+      { "nombre": "MySQL/PostgreSQL", "porcentaje": 70 },
+      { "nombre": "Git & GitHub", "porcentaje": 70 },
+      {
+        "nombre": "Otras tecnologías",
+        "descripcion": "Docker, Azure, Postman, OWASP Top 10, Bootstrap"
+      }
+    ],
+    "proyectos": [
+      {
+        "nombre": "Plataforma Tutorías Especializadas",
+        "descripcion": "Desarrollo de una plataforma web para gestionar tutorías académicas en la Universidad Santo Tomás. Implementa autenticación segura, gestión de horarios, generación de reportes en PDF y CSV, utilizando Python, Flask, MySQL, HTML, CSS y Bootstrap. Se trabajó con metodología ágil Scrum y herramientas como Jira y GitHub.",
+        "link": "https://github.com/LauraLopez0110/proyecto_integrador-tutorias.git",
+        "imagen": "icons/1_project.png"
+      },
+      {
+        "nombre": "Investigacion IA en phishing",
+        "descripcion": "Participación en semillero de ciberseguridad con una investigación sobre cómo la inteligencia artificial potencia ataques de phishing. Se presentó un póster académico con los hallazgos iniciales en un evento universitario, mientras que la elaboración de una cartilla educativa con estrategias de mitigación se encuentra en desarrollo.",
+        "link": "",
+        "imagen": "icons/2_project.png"
+      },
+      {
+        "nombre": "Plataforma de Votación Segura",
+        "descripcion": "Aplicación web para la gestión de elecciones y votaciones en línea. Permite registro de usuarios, creación y edición de elecciones, gestión de candidatos, votaciones seguras con autenticación y visualización de resultados en tiempo real. Desarrollada con Python, Flask, HTML, CSS, Bootstrap y bases de datos SQL, utilizando control de versiones con GitHub.",
+        "link": "https://github.com/danielFer54/SeguridadWebVotacion.git",
+        "imagen": "icons/3_project.png"
+>>>>>>> Stashed changes
       }
     ],
 
     "contacto": [
+<<<<<<< Updated upstream
       { "nombre": "Email", "link": "mailto:lauritayuliethalbino@gmail.com", "descripcion": "lauritayuliethalbino@gmail.com" },
       { "nombre": "LinkedIn", "link": "https://www.linkedin.com/in/laura-yulieth-lópez-albino-0ba412335/", "descripcion": "Perfil profesional" },
       { "nombre": "GitHub", "link": "https://github.com/LauraLopez0110", "descripcion": "Repositorios y proyectos" },
@@ -42,4 +81,162 @@
   },
   "vanesa": {},
   "paula": {}
+=======
+      {
+        "nombre": "Email",
+        "link": "mailto:laura.lopeza@usantoto.edu.co",
+        "icono": "bi bi-envelope",
+        "descripcion": "laura.lopeza@usantoto.edu.co"
+      },
+      {
+        "nombre": "LinkedIn",
+        "link": "https://www.linkedin.com/in/laura-yulieth-lópez-albino-0ba412335",
+        "icono": "bi bi-linkedin",
+        "descripcion": "Perfil profesional"
+      },
+      {
+        "nombre": "GitHub",
+        "link": "https://github.com/LauraLopez0110",
+        "icono": "bi bi-github",
+        "descripcion": "Repositorios y proyectos"
+      },
+      {
+        "nombre": "Teléfono",
+        "link": "https://wa.me/573138668356?text=Hola%20Laura!",
+        "icono": "bi bi-whatsapp",
+        "descripcion": "+57 313 866 83 56"
+      }
+    ]
+  },
+  "vanesa": {
+    "nombre": "Vanesa Alexandra Amaya Bohórquez",
+    "foto": "/static/img/vanesa_icon.png",
+    "icon": "img/icons/vanesa_icon.png",
+    "iniciales": "Vanesa Amaya",
+    "presentacion": "Estudiante de octavo semestre de Ingeniería de Sistemas en la Universidad Santo Tomás, enfocada en el desarrollo de aplicaciones web y la seguridad informática. He trabajado en proyectos académicos donde aplico tecnologías modernas y buenas prácticas de programación segura. Me interesa crecer como desarrolladora full stack, creando soluciones innovadoras y confiables que aporten valor real. ",
+
+    "cv": {
+      "nombre": "Descargar CV",
+      "link": "/static/docs/VanesaAmaya_CV.pdf"
+    },
+
+    "habilidades": [
+      { "nombre": "Python", "porcentaje": 75 },
+      { "nombre": "Flask", "porcentaje": 65 },
+      { "nombre": "JavaScript", "porcentaje": 45 },
+      { "nombre": "HTML & CSS", "porcentaje": 80 },
+      { "nombre": "MySQL/PostgreSQL", "porcentaje": 80 },
+      { "nombre": "Git & GitHub", "porcentaje": 75 },
+      {
+        "nombre": "Otras tecnologías",
+        "descripcion": "Docker, Azure, Postman, OWASP Top 10, Bootstrap"
+      }
+    ],
+
+    "proyectos": [
+      {
+        "nombre": "Plataforma Tutorías Especializadas",
+        "descripcion": "Desarrollo de una plataforma web para gestionar tutorías académicas en la Universidad Santo Tomás. Implementa autenticación segura, gestión de horarios, generación de reportes en PDF y CSV, utilizando Python, Flask, MySQL, HTML, CSS y Bootstrap. Se trabajó con metodología ágil Scrum y herramientas como Jira y GitHub.",
+        "link": "",
+        "imagen": "icons/1_proyectos.png"
+      },
+      {
+        "nombre": "Chatbot Migración Colombia",
+        "descripcion": "Desarrollo de un chatbot basado en Inteligencia Artificial para responder preguntas sobre migración en Colombia. Se empleó Python, Flask, Ollama (modelo LLM) y dataset oficial de Migración Colombia, implementando arquitectura cliente-servidor y base de conocimiento propia.",
+        "link": "",
+        "imagen": "icons/2_proyectos.png"
+      },
+      {
+        "nombre": "Automatización del Pretexting en Ingeniería Social",
+        "descripcion": "Proyecto investigativo sobre el impacto del pretexting automatizado. Incluye un kit de herramientas de concientización, encuestas en Tunja y guía educativa basada en estándares de ciberseguridad (ISO/IEC 27001 y NIST 800-63), con estrategias para identificar, prevenir y responder a amenazas de ingeniería social.",
+        "link": "",
+        "imagen": "icons/3_proyectos.png"
+      }
+    ],
+
+    "contacto": [
+      {
+        "nombre": "Email",
+        "link": "mailto:vanesa.amaya@usantoto.edu.co",
+        "icono": "bi bi-envelope",
+        "descripcion": "vanesa.amaya@usantoto.edu.co"
+      },
+      {
+        "nombre": "LinkedIn",
+        "link": "https://www.linkedin.com/in/vanesa-alexandra-amaya-bohorquez-092412335/",
+        "icono": "bi bi-linkedin",
+        "descripcion": "Perfil profesional"
+      },
+      {
+        "nombre": "GitHub",
+        "link": "https://github.com/VaneAmaya",
+        "icono": "bi bi-github",
+        "descripcion": "Repositorios y proyectos"
+      },
+      {
+        "nombre": "Teléfono",
+        "link": "https://wa.me/573223143981?text=Hola%20Vanesa!",
+        "icono": "bi bi-whatsapp",
+        "descripcion": "+57 322 314 39 81"
+      }
+    ]
+  },
+  "paula": {
+    "nombre": "Maria Paula Salamanca Gómez",
+    "foto": "/static/img/paula.png",
+    "icon": "img/icons/paula-icon.png",
+    "iniciales": "Paula Salamanca",
+    "presentacion": "Estudiante de ingenieria de sistemas perteneciente a 7mo semestre de la universidad Santo Tomás, con experiencia en manejo de metodologías ágiles de desarrollo como scrum y kanban, ciberseguridad con hacking blanco, y desarrollo de aplicaciones web con HTML, CSS y bases de datos SQL. Me interesa seguir creciendo como desarrolladora full stack, enfocándome en la seguridad informática y la creación de soluciones innovadoras.",
+
+    "cv": {
+      "nombre": "Descargar CV",
+      "link": "/static/docs/CV_powered by Adecco.pdf"
+    },
+    "habilidades": [
+      { "nombre": "Java", "porcentaje": 70 },
+      { "nombre": "c++", "porcentaje": 70 },
+      { "nombre": "c#", "porcentaje": 70 },
+      { "nombre": "HTML & CSS", "porcentaje": 80 },
+      { "nombre": "JavaScript", "porcentaje": 80 },
+      { "nombre": "MySQL/PostgreSQL", "porcentaje": 70 },
+      { "nombre": "Git & GitHub", "porcentaje": 70 },
+      { "nombre": "Otras tecnologías", "descripcion": "Ciberseguridad" }
+    ],
+
+    "proyectos": [
+      {
+        "nombre": "Juez Virtual",
+        "descripcion": "Desarrollo de una plataforma web para evaluar y calificar automáticamente código fuente en varios lenguajes de programación. Implementa autenticación segura, gestión de usuarios, creación y edición de problemas de programación, y generación de reportes en PDF y CSV.apartir de moodle, utilizando Java, Spring Boot, MySQL, HTML, CSS y Bootstrap. Se trabajó con metodología ágil Scrum y herramientas como Jira y GitHub.",
+        "imagen": "icons/JuezVirtual.png "
+      }
+    ],
+
+    "contacto": [
+      {
+        "nombre": "Email",
+        "link": "mailto:maria.salamancag@usantoto.edu.co",
+        "icono": "bi bi-envelope",
+        "descripcion": "maria.salamancag@usantoto.edu.co"
+      },
+      {
+        "nombre": "LinkedIn",
+        "link": "www.linkedin.com/in/maria-paula-salamanca-gómez-738b4037b",
+        "icono": "bi bi-linkedin",
+        "descripcion": "Perfil profesional"
+      },
+      {
+        "nombre": "GitHub",
+        "link": "https://github.com/Scarlett2308",
+        "icono": "bi bi-github",
+        "descripcion": "Repositorios y proyectos"
+      },
+      {
+        "nombre": "Teléfono",
+        "link": "https://wa.me/573107837108",
+        "icono": "bi bi-whatsapp",
+        "descripcion": "+57 3107837108"
+      }
+    ]
+  }
+>>>>>>> Stashed changes
 }

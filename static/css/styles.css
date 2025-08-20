@@ -3,10 +3,55 @@ html, body {
   margin: 0;
 }
 
+main {
+  flex: 1; /* ocupa todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra el contenido verticalmente */
+  align-items: center; /* centra el contenido horizontalmente */
+  padding: 20px; /* espacio alrededor del contenido */
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
 body {
   display: flex;
   flex-direction: column;
+<<<<<<< Updated upstream
   min-height: 100vh; /* altura mínima de la ventana */
+=======
+  min-height: 100vh;
+  background-color: rgb(242, 234, 234); /* altura mínima de la ventana */
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap; /* permite que las tarjetas se ajusten en varias filas */
+  justify-content: center; /* centra las tarjetas horizontalmente */
+  align-items: center;
+  gap: 20px; /* espacio entre las tarjetas */
+  padding: 20px; /* espacio alrededor de las tarjetas */
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr; /* una columna */
+  place-items: center; /* centra el contenido de la tarjeta */
+  height: 200px;
+  width: 200px;
+  background-color: #e3d1de; /* color de fondo */
+  color: #333;               /* color del texto */
+  border: none;
+  transition: all ease-in-out 200ms;              /* opcional, si quieres quitar el borde */
+}
+.card:hover {
+  transform: scale(1.05); /* aumenta ligeramente el tamaño al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra al pasar el mouse */
+>>>>>>> Stashed changes
 }
 
 main {
