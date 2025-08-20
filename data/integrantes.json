@@ -6,6 +6,11 @@
     "iniciales": "Laura López",
     "presentacion": "Estudiante de últimos semestres de Ingeniería de Sistemas en la Universidad Santo Tomás. Con formación en desarrollo web, seguridad informática y bases de datos. Experiencia en proyectos académicos aplicando tecnologías modernas y buenas prácticas de desarrollo seguro. Participante en semilleros de investigación en ciberseguridad, con un proyecto sobre phishing impulsado por IA. Interesada en consolidar un perfil full stack con enfoque en seguridad.",
     
+      "cv": {
+    "nombre": "Descargar CV",
+    "link": "/static/docs/CV_LauraLópez.pdf"
+  },
+
     "habilidades": [
     { "nombre": "Python", "porcentaje": 70 },
     { "nombre": "Flask", "porcentaje": 70 },
