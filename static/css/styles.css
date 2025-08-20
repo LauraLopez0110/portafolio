@@ -1,32 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
 html, body {
   height: 100%;
   margin: 0;
+}
+
+main {
+  flex: 1; /* ocupa todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra el contenido verticalmente */
+  align-items: center; /* centra el contenido horizontalmente */
+  padding: 20px; /* espacio alrededor del contenido */
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(242, 234, 234); /* altura mínima de la ventana */
+  background-color: rgb(242, 234, 234); /* color de fondo */
 }
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* permite varias filas */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 .card {
-  background-color: #e3d1de; /* color de fondo */
-  color: #333;               /* color del texto */
-  border: none;              /* opcional, si quieres quitar el borde */
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: #e3d1de;
+  color: #333;
+  border: none;
+  transition: all ease-in-out 200ms;
 }
 
-main {
-  flex: 1; /* ocupa todo el espacio disponible */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .avatar-icon {
-  width: 80px;   /* ancho fijo */
-  height: 80px;  /* alto fijo */
-  object-fit: cover;  /* recorta sin deformar */
-  border-radius: 50%; /* si quieres que sea circular */
-  border: 2px solid #ddd; /* opcional: un borde suave */
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
 }
 
 footer {
@@ -34,7 +68,7 @@ footer {
   color: #fff;
   padding: 8px;
   text-align: center;
-   margin-top: auto;
+  margin-top: auto;
 }
 
 .navbar .dropdown-menu {
@@ -42,7 +76,7 @@ footer {
 }
 
 .cv-btn {
-  background-color: #cd280b; /* color azul */
+  background-color: #cd280b;
   padding: 10px 15px;
   border: none;
   color: white;
@@ -54,7 +88,7 @@ footer {
 }
 
 .cv-btn:hover {
-  background-color: #d20684; /* azul más oscuro al pasar el mouse */
+  background-color: #d20684;
 }
 
 .card-img-top {
@@ -62,6 +96,7 @@ footer {
   object-fit: cover;
 }
 
+/* Perfil */
 .perfil-card {
   max-width: 500px;
   margin: 40px auto;
@@ -77,7 +112,6 @@ footer {
   box-shadow: 0 25px 40px rgba(0,0,0,0.15);
 }
 
-/* Imagen de perfil */
 .perfil-img-wrapper {
   width: 150px;
   height: 150px;
@@ -93,43 +127,32 @@ footer {
   object-fit: cover;
 }
 
-/* Nombre */
 .perfil-nombre {
   font-weight: 700;
   font-size: 1.8rem;
   color: #1f3f72;
 }
 
-/* Presentación */
 .perfil-presentacion {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.5;
 }
+
 .shadow-glow {
   box-shadow: 0 0 10px rgba(218, 60, 25, 0.7),
-              0 0 20px rgba(209, 39, 5, 0.5) ;
+              0 0 20px rgba(209, 39, 5, 0.5);
 }
 
 .contact-card {
- 
-  border: 1px solid rgba(0, 0, 0, 0.1); /* borde muy suave */
-  border-radius: 12px;            /* bordes redondeados */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra ligera */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
   padding: 20px;
 }
 
 .contact-card:hover {
-  transform: translateY(-3px);         /* leve elevación al pasar mouse */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra un poco más fuerte */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
- 
- 
-  
-
-
-
-
-
-

@@ -99,5 +99,61 @@
   ]
 },
 
-  "paula": {}
+  "paula": {
+    "nombre": "Maria Paula Salamanca Gómez",
+    "foto": "/static/img/paula.png",
+    "icon": "img/icons/paula-icon.png",
+    "iniciales": "Paula Salamanca",
+    "presentacion": "Estudiante de ingenieria de sistemas perteneciente a 7mo semestre de la universidad Santo Tomás, con experiencia en manejo de metodologías ágiles de desarrollo como scrum y kanban, ciberseguridad con hacking blanco, y desarrollo de aplicaciones web con HTML, CSS y bases de datos SQL. Me interesa seguir creciendo como desarrolladora full stack, enfocándome en la seguridad informática y la creación de soluciones innovadoras.",
+
+    "cv": {
+      "nombre": "Descargar CV",
+      "link": "/static/docs/CV_powered by Adecco.pdf"
+    },
+    "habilidades": [
+      { "nombre": "Java", "porcentaje": 70 },
+      { "nombre": "c++", "porcentaje": 70 },
+      { "nombre": "c#", "porcentaje": 70 },
+      { "nombre": "HTML & CSS", "porcentaje": 80 },
+      { "nombre": "JavaScript", "porcentaje": 80 },
+      { "nombre": "MySQL/PostgreSQL", "porcentaje": 70 },
+      { "nombre": "Git & GitHub", "porcentaje": 70 },
+      { "nombre": "Otras tecnologías", "descripcion": "Ciberseguridad" }
+    ],
+
+    "proyectos": [
+      {
+        "nombre": "Juez Virtual",
+        "descripcion": "Desarrollo de una plataforma web para evaluar y calificar automáticamente código fuente en varios lenguajes de programación. Implementa autenticación segura, gestión de usuarios, creación y edición de problemas de programación, y generación de reportes en PDF y CSV.apartir de moodle, utilizando Java, Spring Boot, MySQL, HTML, CSS y Bootstrap. Se trabajó con metodología ágil Scrum y herramientas como Jira y GitHub.",
+        "imagen": "icons/JuezVirtual.png "
+      }
+    ],
+
+    "contacto": [
+      {
+        "nombre": "Email",
+        "link": "mailto:maria.salamancag@usantoto.edu.co",
+        "icono": "bi bi-envelope",
+        "descripcion": "maria.salamancag@usantoto.edu.co"
+      },
+      {
+        "nombre": "LinkedIn",
+        "link": "www.linkedin.com/in/maria-paula-salamanca-gómez-738b4037b",
+        "icono": "bi bi-linkedin",
+        "descripcion": "Perfil profesional"
+      },
+      {
+        "nombre": "GitHub",
+        "link": "https://github.com/Scarlett2308",
+        "icono": "bi bi-github",
+        "descripcion": "Repositorios y proyectos"
+      },
+      {
+        "nombre": "Teléfono",
+        "link": "https://wa.me/573107837108",
+        "icono": "bi bi-whatsapp",
+        "descripcion": "+57 3107837108"
+      }
+    ]
+  }
 }
