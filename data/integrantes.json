@@ -34,12 +34,63 @@
     ],
 
     "contacto": [
-      { "nombre": "Email", "link": "mailto:lauritayuliethalbino@gmail.com", "descripcion": "lauritayuliethalbino@gmail.com" },
+      { "nombre": "Email", "link": "mailto:vanesa.amaya@usantoto.edu.co", "descripcion": "vanesa.amaya@usantoto.edu.co" },
       { "nombre": "LinkedIn", "link": "https://www.linkedin.com/in/laura-yulieth-lópez-albino-0ba412335/", "descripcion": "Perfil profesional" },
       { "nombre": "GitHub", "link": "https://github.com/LauraLopez0110", "descripcion": "Repositorios y proyectos" },
       { "nombre": "Teléfono", "descripcion": "+57 313 866 8356" }
     ]
   },
-  "vanesa": {},
+  "vanesa": { 
+  "nombre": "Vanesa Alexandra Amaya Bohórquez",
+  "foto": "/static/img/vanesa_icon.png",
+  "icon": "img/icons/vanesa_icon.png",
+  "iniciales": "Vanesa Amaya",
+  "presentacion": "Estudiante de octavo semestre de Ingeniería de Sistemas en la Universidad Santo Tomás, enfocada en el desarrollo de aplicaciones web y la seguridad informática. He trabajado en proyectos académicos donde aplico tecnologías modernas y buenas prácticas de programación segura. Me interesa crecer como desarrolladora full stack, creando soluciones innovadoras y confiables que aporten valor real. ",
+  
+  "cv": {
+    "nombre": "Descargar CV",
+    "link": "/static/docs/VanesaAmaya_CV.pdf"
+  },
+
+  "habilidades": [
+    { "nombre": "Python", "estrellas": 4, "porcentaje": 75 },
+    { "nombre": "Flask", "estrellas": 4, "porcentaje": 65 },
+    { "nombre": "JavaScript", "estrellas": 2, "porcentaje": 45 },
+    { "nombre": "HTML & CSS", "estrellas": 4, "porcentaje": 80 },
+    { "nombre": "MySQL/PostgreSQL", "estrellas": 3.5, "porcentaje": 80 },
+    { "nombre": "Git & GitHub", "estrellas": 4, "porcentaje": 75 },
+    { "nombre": "Otras tecnologías", "descripcion": "Docker, Azure, Postman, OWASP Top 10, Bootstrap" }
+  ],
+  
+  "proyectos": [
+  { 
+    "nombre": "Plataforma Tutorías Especializadas", 
+    "descripcion": "Desarrollo de una plataforma web para gestionar tutorías académicas en la Universidad Santo Tomás. Implementa autenticación segura, gestión de horarios, generación de reportes en PDF y CSV, utilizando Python, Flask, MySQL, HTML, CSS y Bootstrap. Se trabajó con metodología ágil Scrum y herramientas como Jira y GitHub.", 
+    "link": "",
+    "imagen": "icons/1_proyectos.png"
+  },
+  { 
+    "nombre": "Chatbot Migración Colombia", 
+    "descripcion": "Desarrollo de un chatbot basado en Inteligencia Artificial para responder preguntas sobre migración en Colombia. Se empleó Python, Flask, Ollama (modelo LLM) y dataset oficial de Migración Colombia, implementando arquitectura cliente-servidor y base de conocimiento propia.", 
+    "link": "",
+    "imagen": "icons/2_proyectos.png"
+  },
+  { 
+    "nombre": "Automatización del Pretexting en Ingeniería Social", 
+    "descripcion": "Proyecto investigativo sobre el impacto del pretexting automatizado. Incluye un kit de herramientas de concientización, encuestas en Tunja y guía educativa basada en estándares de ciberseguridad (ISO/IEC 27001 y NIST 800-63), con estrategias para identificar, prevenir y responder a amenazas de ingeniería social.", 
+    "link": "",
+    "imagen": "icons/3_proyectos.png"
+  }
+],
+
+
+  "contacto": [
+    { "nombre": "Email", "link": "mailto:vanesa.amaya@usantoto.edu.co", "icono": "bi bi-envelope","descripcion": "vanesa.amaya@usantoto.edu.co" },
+    { "nombre": "LinkedIn", "link": "https://www.linkedin.com/in/vanesa-alexandra-amaya-bohorquez-092412335/", "icono": "bi bi-linkedin","descripcion": "Perfil profesional" },
+    { "nombre": "GitHub", "link": "https://github.com/VaneAmaya", "icono": "bi bi-github", "descripcion": "Repositorios y proyectos" },
+    { "nombre": "Teléfono","link": "https://wa.me/573223143981?text=Hola%20Vanesa!","icono": "bi bi-whatsapp", "descripcion": "+57 322 314 39 81" }
+  ]
+},
+
   "paula": {}
 }

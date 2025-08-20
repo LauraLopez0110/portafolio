@@ -2,7 +2,7 @@
 endblock %} {% block content %}
 <div class="container my-5">
   <!-- Card del perfil -->
-  <div class="card text-center shadow-lg mb-4">
+  <div class="card text-center shadow-glow mb-4">
     <div class="card-body">
       <img
         src="{{ perfil.foto }}"
@@ -13,11 +13,16 @@ endblock %} {% block content %}
       />
       <h2 class="card-title">{{ perfil.nombre }}</h2>
       <p class="card-text">{{ perfil.presentacion }}</p>
+      {% if perfil.cv %}
+  <a href="{{ perfil.cv.link }}" download class="cv-btn">
+    <i class="bi bi-download"></i> {{ perfil.cv.nombre }}
+  </a>
+{% endif %}
     </div>
   </div>
 
 <!-- Card de habilidades -->
-<div class="card shadow-lg mb-4">
+<div class="card shadow-glow mb-4">
   <div class="card-body">
     <h3 class="card-title text-center">Habilidades</h3>
     {% for h in perfil.habilidades %}
@@ -43,41 +48,70 @@ endblock %} {% block content %}
 
 
   <!-- Card de proyectos -->
-  <div class="card shadow-lg mb-4">
-    <div class="card-body">
-      <h3 class="card-title text-center">Proyectos</h3>
-      <ul class="list-group list-group-flush">
-        {% for p in perfil.proyectos %}
-        <li class="list-group-item text-center">
-          {% if p.link %}
-          <a href="{{ p.link }}" target="_blank">{{ p.nombre }}</a>
-          {% else %} {{ p.nombre }} {% endif %} {% if p.descripcion %}
-          <br /><small>{{ p.descripcion }}</small>
+<div class="card shadow-glow mb-4  ">
+  <div class="card-body">
+    <h3 class="card-title text-center mb-4">Proyectos</h3>
+    <div class="row row-cols-1   row-cols-md-3 g-4">
+      {% for p in perfil.proyectos %}
+      <div class="col">
+        <div class="card h-100 contact-card shadow-sm ">
+          {% if p.imagen %}
+          <img src="{{ url_for('static', filename='img/' ~ p.imagen) }}" class="card-img-top" alt="{{ p.nombre }}">
           {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-
-  <!-- Card de Contacto -->
-  <div class="card shadow-lg">
-    <div class="card-body">
-      <h3 class="card-title text-center">Contacto</h3>
-      <ul class="list-group list-group-flush text-center">
-        {% for c in perfil.contacto %}
-        <li class="list-group-item">
-          {% if c.link %}
-          <a href="{{ c.link }}" target="_blank">{{ c.nombre }}</a>
-          {% else %}
-          <strong>{{ c.nombre }}:</strong>
-          {% endif %} {% if c.descripcion %}
-          <br /><small>{{ c.descripcion }}</small>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center">
+              {% if p.link %}
+              <a href="{{ p.link }}" target="_blank">{{ p.nombre }}</a>
+              {% else %}
+              {{ p.nombre }}
+              {% endif %}
+            </h5>
+            {% if p.descripcion %}
+            <p class="card-text text-center mt-2">{{ p.descripcion }}</p>
+            {% endif %}
+            {% if p.link %}
+            <div class="mt-auto text-center">
+              <a href="{{ p.link }}" target="_blank" class="btn btn-primary btn-sm">Ver proyecto</a>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
-{% endblock %}
+
+  <!-- Card de Contacto -->
+  
+<div class="card shadow-glow  mb-4">
+  <div class="card-body">
+    <h3 class="card-title text-center mb-4">Contacto</h3>
+    <div class="d-flex flex-column flex-md-row  justify-content-center align-items-center gap-4">
+      {% for c in perfil.contacto %}
+      <div class="card contact-card  shadow-sm p-3 text-center" style="min-width: 180px;">
+        <div class="card-body contact-card ">
+          <!-- Ícono -->
+          {% if c.icono %}
+          <i class="{{ c.icono }} fs-3 mb-2"></i>
+          {% endif %}
+          
+          <h5 class="card-title">
+            {% if c.link %}
+            <a href="{{ c.link }}" target="_blank" class="text-decoration-none">{{ c.nombre }}</a>
+            {% else %}
+            {{ c.nombre }}
+            {% endif %}
+          </h5>
+
+          {% if c.descripcion %}
+          <p class="card-text mt-2">{{ c.descripcion }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+  {% endblock %}
