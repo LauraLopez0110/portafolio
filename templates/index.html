@@ -3,11 +3,14 @@
 {% block title %}Inicio · Portafolio{% endblock %}
 
 {% block content %}
-<h1 class="text-center">Portafolio del equipo</h1>
+<h1 class="text-center mb-3">Portafolio del equipo</h1>
+<p class="text-center text-muted mb-5">
+  Explora los perfiles y proyectos desarrollados por nuestro equipo.
+</p>
 
 <div class="cards-index">
   {% for slug, i in integrantes.items() %}
-    <a href="/perfil/{{ slug }}" class="card-cuadrada">
+    <a href="/perfil/{{ slug }}" class="card-cuadrada text-decoration-none">
       {% if i.icon %}
         <img src="{{ url_for('static', filename=i.icon) }}" alt="Ícono de {{ i.nombre }}" class="avatar-icon">
       {% elif i.iniciales %}
@@ -17,7 +20,7 @@
       {% else %}
         <img src="{{ i.foto }}" alt="Foto de {{ i.nombre }}" class="avatar-icon">
       {% endif %}
-      <p>{{ i.iniciales }}</p>
+      <h5 class="mt-3 text-dark">{{ i.nombre }}</h5>
     </a>
   {% endfor %}
 </div>
