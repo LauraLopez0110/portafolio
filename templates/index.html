@@ -3,11 +3,11 @@
 {% block title %}Inicio · Portafolio{% endblock %}
 
 {% block content %}
-<h1>Portafolio del equipo</h1>
+<h1 class="text-center">Portafolio del equipo</h1>
 
-<div class="cards">
+<div class="cards-index">
   {% for slug, i in integrantes.items() %}
-    <a href="/perfil/{{ slug }}" class="card">
+    <a href="/perfil/{{ slug }}" class="card-cuadrada">
       {% if i.icon %}
         <img src="{{ url_for('static', filename=i.icon) }}" alt="Ícono de {{ i.nombre }}" class="avatar-icon">
       {% elif i.iniciales %}
