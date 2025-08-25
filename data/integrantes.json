@@ -108,7 +108,7 @@
 
     "cv": {
       "nombre": "Descargar CV",
-      "link": "/static/docs/CV_powered by Adecco.pdf"
+      "link": "/static/docs/CV powered by Adecco.pdf"
     },
     "habilidades": [
       { "nombre": "Java", "porcentaje": 70 },
